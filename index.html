@@ -269,25 +269,25 @@
                                 <span class="mr-4 text-warning">
                                     <i class="feather-check"></i>
                                 </span>
-                                <p>အမဲစက်တွေကို မှေးမှိန်သွားစေတယ်။</p>
+                                <p>မျက်ကွင်းညိုခြင်းကို သက်သာစေတယ်။</p>
                             </div>
                             <div class="d-flex mb-1">
                                 <span class="mr-4 text-warning">
                                     <i class="feather-check"></i>
                                 </span>
-                                <p>တင်းတိတ်၊ ၀က်ခြံ၊ အမာရွတ်၊ မှည့်ခြောက်နဲ့ cellသေတွေကို ဖယ်ရှားသန့်စင်ပေးပါတယ်။</p>
+                                <p>အသားအရည်ကို ကြည်လင်အေးမြချောမွေ့စေတယ်။</p>
                             </div>
                             <div class="d-flex mb-1">
                                 <span class="mr-4 text-warning">
                                     <i class="feather-check"></i>
                                 </span>
-                                <p>cell အသစ်တွေ ပြန်လည်ဖြစ်ပေါစေသောကြောင့် အသားအရည်ကို ကြည်လင်၀င်းပစေပါတယ်။</p>
+                                <p>အသားအရည်လှပြီး glowy effect ပိုင်ဆိုင်ချင်သူတွေအတွက် အသင့်တော်ဆုံး ရေဓာတ်ဖြည့် mask လေးပါ။</p>
                             </div>
                             <div class="d-flex">
                                 <span class="mr-4 text-warning">
                                     <i class="feather-check"></i>
                                 </span>
-                                <p>အမွှေးနံ့သာမပါတဲ့အတွက် chemicalနည်းပါးစွာ glow skinကို ပေးစွမ်းပါတယ်။</p>
+                                <p>၁၅ မိနစ် အချိန်ပေးရုံနဲ့ ပိုးသားလို နူးညံ့ပြီး original glow နေမှာနော်</p>
                             </div>
                             <button class="btn btn-dark btn-block mt-4 mt-lg-5">Buy Now</button>
                         </div>
@@ -427,11 +427,11 @@
                     <span class="underline mt-3"></span>
                 </div>
                 <div class="col-11 col-md-8 col-lg-6 text-center wow animate__zoomInDown">
-                    <input type="text" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Name">
-                    <input type="email" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Email">
-                    <input type="phone" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Phone(Optional)">
-                    <textarea name="" id="" cols="30" rows="6" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Content ..."></textarea>
-                    <button class="btn btn-wanning text-white px-5 mt-3 mb-lg-5 mb-md-3" id="sendMail">Send</button>
+                    <input type="text" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Name" required id="customerName">
+                    <input type="email" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Email" required id="customerEmail">
+                    <input type="phone" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Phone(Optional)" id="customerPhone">
+                    <textarea name="" cols="30" rows="6" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Content ..." required id="customerContent"></textarea>
+                    <button type="submit" class="btn btn-wanning text-white px-5 mt-3 mb-lg-5 mb-md-3" id="sendMail">Send</button>
                 </div>
             </div>
         </div>
@@ -472,11 +472,13 @@
         <div class="footer-own wow animate__fadeInLeft">
             <div class="container">
                 <div class="row"> 
-                    <div class="col-12 d-flex align-items-center px-md-0 py-4">
+                    <div class="col-12 col-sm-12 col-md-6 col-md-6  d-flex align-items-center px-md-0 py-4">
                         <img src="./assets/img/logo.png" class="mr-2" width="40px" alt="">
                         <p class="flex-grow-1 mb-0">2020@honestmagicianmask</p>
-                        <p class="mb-0">Proudly Powerd By Alpha.inc</p>
+                        
+                        
                     </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-md-6"><p class="mb-0 text-center">Proudly Powerd By Alpha.inc</p></div>
                 </div>
             </div>
         </div>
@@ -487,7 +489,12 @@
     <script src="./vendor/slick-1.8.1/slick/slick.js"></script>
     <script src="./WOW-master/dist/wow.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
+    
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/review.js"></script>
+    <script src="assets/js/email.js"></script>
+    <script src="assets/js/content/reviewContent.js" type="module"></script>
 </body>
 </html>
