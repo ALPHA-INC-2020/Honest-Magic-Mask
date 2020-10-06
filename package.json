@@ -1,7 +1,6 @@
 {
   "name": "programming",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.5.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALPHA-INC-2020/cosmetic_website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ALPHA-INC-2020/cosmetic_website/issues"
+  },
+  "homepage": "https://github.com/ALPHA-INC-2020/cosmetic_website#readme",
+  "description": ""
 }

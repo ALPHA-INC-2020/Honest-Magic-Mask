@@ -21,7 +21,7 @@ let reviews = [
 
 reviews.forEach(review => {
     testimonial.innerHTML += `
-        <div class="col-md-12 mt-3 position-relative">
+        <div class="col-md-12 mt-3 position-relative wow animate__zoomInDown">
             <span>
                 <img src="assets/img/pic15.png" width="25px" alt="">
             </span>
@@ -36,6 +36,22 @@ reviews.forEach(review => {
         </div>
     `
 });
+
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animate__animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
 
 $('.testimonial-box').slick({
     dots: true,
@@ -78,9 +94,11 @@ $('.testimonial-box').slick({
   });
 
 let screenHeight = $(window).height();
+console.log(screenHeight);
 $(window).scroll(function() {
     let currentPosition = $(this).scrollTop();
-    if(currentPosition > screenHeight) {
+    console.log(currentPosition);
+    if(currentPosition > screenHeight - 200) {
         $('nav').addClass('fixed-nav');
     } else {
         $('nav').removeClass('fixed-nav');

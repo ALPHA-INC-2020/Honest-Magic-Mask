@@ -41,6 +41,9 @@ body {
     right: 0px;
     animation: slideDown .4s linear;
 }
+nav {
+    z-index: 10000;
+}
 @keyframes slideDown {
     0% {
         transform: translateY(-100px);
@@ -61,6 +64,9 @@ body {
         left: 50%;
         transform: translate(-50%,-50%);
         width: 350px;
+    }
+    .direction-img {
+        height: 250px;
     }
 }
 @media screen and (max-width: 480px) {
@@ -90,5 +96,8 @@ body {
     }
     .border-none {
         border-right: 3px solid var(--wanning);
+    }
+    .direction-img {
+        height: 158px;
     }
 }
