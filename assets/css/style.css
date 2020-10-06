@@ -5,6 +5,7 @@ body {
     max-width: 100%;
     line-height: 1.75;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 .underline {
     width: 50px;
@@ -52,12 +53,23 @@ nav {
         transform: translateY(0);
     }
 }
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--wanning);
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem var(--wanning);
+    box-shadow: 0 0 0 0.2rem var(--wanning);
+}
 @media screen and (max-width: 780px) {
     #services img {
         width: 300px;
     }
     #ingredients img:first-child {
         height: 120px;
+    }
+    .navbar-toggler {
+        outline: none;
     }
     .package {
         top: 50%;
@@ -67,6 +79,10 @@ nav {
     }
     .direction-img {
         height: 250px;
+    }
+    .ul-tag {
+        text-align: center;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 480px) {
@@ -99,5 +115,9 @@ nav {
     }
     .direction-img {
         height: 158px;
+    }
+    .single-item img {
+        height: 100px;
+        margin-bottom: 20px;
     }
 }

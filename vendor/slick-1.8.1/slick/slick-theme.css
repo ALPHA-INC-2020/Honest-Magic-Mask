@@ -156,14 +156,14 @@
   font-size: 6px;
   line-height: 20px;
   text-align: center;
-  color: var(--wanning);
+  color: black;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
-  color: var(--wanning);
+  color: black;
   opacity: 0.75;
 }
 /*# sourceMappingURL=slick-theme.css.map */
