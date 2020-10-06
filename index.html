@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Honest Magic Mask</title>
     <link rel="stylesheet" href="assets/css/loader.css">
     <link rel="stylesheet" href="vendor/feather_icons/feather.css">
     <link rel="stylesheet" href="custom_css/custom.css">
@@ -27,7 +27,7 @@
                     <a class="navbar-brand" href="#">
                         <img src="./assets/img/logo.png" width="60px" alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" shadow-none data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;border: none">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -67,7 +67,9 @@
                         <h2 class="font-weight-bold">HONEST MAGICIAN MASK</h2>
                         <p>Your skin is an investment, not an expense.</p>
                         <div class="">
+                            <a href="#about">
                             <button class="btn btn-dark mt-2 px-4">View More</button>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +89,11 @@
                         <span class="ml-3"><img src="./assets/img/pic1.png" width="25px" alt=""></span>
                     </div>
                     <p class="mt-1">Thai made ဖြစ်တဲ့အတွက် အရှေ့တောင်အာရှသားတွေရဲ့ မျက်နှာများနဲ့ fit ဖြစ်တယ်။ T-zome တွေကို အဓိက fitဖြစ်တာမို့ healthy skin ရရှိမှု ပိုမြန်တယ်။</p>
-                    <button class="btn btn-dark mt-2"><a href="#quality" class="text-white text-decoration-none">See More</a> <small><i class="feather-chevron-right mt-1"></i></small></button>
+                    <a href="#quality">
+                        <button class="btn btn-dark mt-2"><a href="#quality" class="text-white text-decoration-none">See More</a> <small><i class="feather-chevron-right mt-1"></i></small></button>
+                    </a>
+                    
+                    
                 </div>
                 <div class="col-md-5 offset-md-2 mt-3 mt-md-5 wow animate__fadeInRight">
                     <div class="d-flex">
@@ -406,7 +412,7 @@
                                 </li>
                             </ul>
                         </p>
-                        <button class="btn btn-dark ml-5 mt-4">Learn More</button>
+                        <button class="btn btn-dark ml-5 mt-4">Buy Now</button>
                     </div>
                     <hr>
                 </div>
@@ -425,7 +431,7 @@
                     <input type="email" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Email">
                     <input type="phone" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Phone(Optional)">
                     <textarea name="" id="" cols="30" rows="6" class="form-control border-wanning px-4 py-4 mb-4" placeholder="Content ..."></textarea>
-                    <button class="btn btn-wanning text-white px-5 mt-3 mb-lg-5 mb-md-3">Send</button>
+                    <button class="btn btn-wanning text-white px-5 mt-3 mb-lg-5 mb-md-3" id="sendMail">Send</button>
                 </div>
             </div>
         </div>
@@ -480,6 +486,8 @@
     <script src="./vendor/bootstrap-4.5.2/dist/js/bootstrap.min.js"></script>
     <script src="./vendor/slick-1.8.1/slick/slick.js"></script>
     <script src="./WOW-master/dist/wow.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

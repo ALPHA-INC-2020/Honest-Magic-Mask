@@ -145,3 +145,17 @@ $(window).on("load",function() {
     $(this).remove();
   })
 })
+
+$("#sendMail").click(function(){
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "minthukyaw@uit.edu.mm ",
+    Password : "12345678",
+    To : 'kyaw261517@gmail.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+})
