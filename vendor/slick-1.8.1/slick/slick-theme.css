@@ -57,19 +57,20 @@
   font-family: "slick";
   font-size: 20px;
   line-height: 1;
-  color: white;
+  color: #000000;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-  left: -25px;
+  left: 25px;
+  z-index: 10000;
 }
 
 [dir="rtl"] .slick-prev {
   left: auto;
-  right: -25px;
+  right: 25px;
 }
 
 .slick-prev:before {
@@ -81,11 +82,11 @@
 }
 
 .slick-next {
-  right: -25px;
+  right: 25px;
 }
 
 [dir="rtl"] .slick-next {
-  left: -25px;
+  left: 25px;
   right: auto;
 }
 
@@ -156,14 +157,14 @@
   font-size: 6px;
   line-height: 20px;
   text-align: center;
-  color: black;
+  color: var(--warning);
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
-  color: black;
+  color: var(--warning);
   opacity: 0.75;
 }
 /*# sourceMappingURL=slick-theme.css.map */

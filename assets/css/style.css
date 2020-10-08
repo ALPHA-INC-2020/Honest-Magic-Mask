@@ -1,10 +1,17 @@
+:root {
+    --background: #ffd131c9;
+}
+.bg {
+    background: var(--background);
+}
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 body {
     max-width: 100%;
     line-height: 1.75;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: 'Poppins', sans-serif;
 }
 .underline {
@@ -21,7 +28,7 @@ body {
 .quote {
     position: absolute;
     right: 0px;
-    top: 60px;
+    bottom: 0px;
 }
 .package {
     top: 50%;
@@ -36,14 +43,10 @@ body {
     z-index: 100000;
     background: #ffffff;
     box-shadow: 1px 1px 3px #000000;
-    width: 100%;
     position: fixed;
     top: 0px;
     right: 0px;
     animation: slideDown .4s linear;
-}
-nav {
-    z-index: 10000;
 }
 @keyframes slideDown {
     0% {
@@ -61,7 +64,25 @@ nav {
     -webkit-box-shadow: 0 0 0 0.2rem var(--wanning);
     box-shadow: 0 0 0 0.2rem var(--wanning);
 }
+#testimonial .slick-prev {
+    left: 0px;
+    z-index: 10000;
+}
+#testimonial [dir="rtl"] .slick-prev {
+    left: auto;
+    right: 0px;
+}
+#testimonial .slick-next {
+    right: 0px;
+}
+#testimonial [dir="rtl"] .slick-next {
+    left: 0px;
+    right: auto;
+}
 @media screen and (max-width: 780px) {
+    body {
+        overflow-x: hidden !important;
+    }
     #services img {
         width: 300px;
     }
@@ -87,7 +108,7 @@ nav {
 }
 @media screen and (max-width: 480px) {
     body {
-        max-width: 100%;
+        overflow-x: hidden !important;
     }
     .package {
         display: none;
@@ -119,5 +140,17 @@ nav {
     .single-item img {
         height: 100px;
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .direction-img {
+        height: 190px;
+    }
+    #price h2 {
+        font-size: 24px;
+    }
+    .price p {
+        font-size: 18px;
     }
 }
