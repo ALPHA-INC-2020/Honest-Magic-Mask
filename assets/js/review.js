@@ -63,18 +63,20 @@ let reviews = [
 
 reviews.forEach(review => {
     testimonial.innerHTML += `
-    <div class="col-md-12 mt-3 position-relative wow animate__zoomInDown">
-    <span>
-    <img src="assets/img/pic15.png" width="25px" alt="">
-    </span>
-    <p class="ml-4 mb-0">${review.description}<img src="assets/img/pic16.png" class='quote' width="25px" alt=""></p>
-    <div class="col-12 mx-auto">
-    <hr class="my-4" style="border-width: 2px !important;">
-    </div>
-    <div class="d-flex align-items-center">
-    <img src="./assets/img/pic14.png" class="ml-2" width="60px" alt="">
-    <p class="font-weight-bold mb-0 ml-3">${review.name}</p>
-    </div>
+    <div class="col-md-12 mt-3" data-aos="flip-up">
+        <div class="position-relative">
+            <span>
+                <img src="assets/img/pic15.png" width="25px" alt="">
+            </span>
+            <p class="ml-4 mb-0">${review.description}<img src="assets/img/pic16.png" class='quote' width="25px" alt=""></p>
+        </div>
+        <div class="col-12 mx-auto">
+            <hr class="my-4" style="border-width: 2px !important;">
+        </div>
+        <div class="d-flex align-items-center">
+            <img src="./assets/img/pic14.png" class="ml-2" width="60px" alt="">
+            <p class="font-weight-bold mb-0 ml-3">${review.name}</p>
+        </div>
     </div>
     `
 });
@@ -116,9 +118,10 @@ var wow = new WOW(
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     arrows: false,
+                    dots: false
                 }
             },
             {
@@ -126,7 +129,8 @@ var wow = new WOW(
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false,
+                    arrows: true,
+                    dots: false,
                 }
             }
             // You can unslick at a given breakpoint now by adding:

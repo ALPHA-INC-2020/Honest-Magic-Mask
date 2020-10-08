@@ -22,7 +22,8 @@
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: false
+          dots: false,
+          arrows: true,
         }
       },
       {
@@ -38,8 +39,8 @@
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,
-          dots: false
+          dots: false,
+          arrows: true
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -51,6 +52,7 @@
     $('.loading').fadeOut(500,function() {
       $(this).remove();
     })
-  })
+  });
+  AOS.init();
   
   
